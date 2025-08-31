@@ -1,0 +1,17 @@
+# Beispiel: alles in models/ & results/ ignorieren,
+# aber genau 3 Modelle + deren _test-Ordner zulassen
+
+models/**
+!models/
+!models/cnn_nomask_2025_08_31_1622_batch-64_lr-0001.pt
+!models/nn_nomask_2025_08_31_0616_batch-128_lr-5601007788367291e-05.pt
+!models/nn_mlp_nomask_2025_08_31_1257_batch-128_lr-0001.pt
+
+results/**
+!results/
+!results/cnn_nomask_2025_08_31_1622_batch-64_lr-0001_test/
+!results/cnn_nomask_2025_08_31_1622_batch-64_lr-0001_test/**
+!results/nn_nomask_2025_08_31_0616_batch-128_lr-5601007788367291e-05_test/
+!results/nn_nomask_2025_08_31_0616_batch-128_lr-5601007788367291e-05_test/**
+!results/nn_mlp_nomask_2025_08_31_1257_batch-128_lr-0001_test/
+!results/nn_mlp_nomask_2025_08_31_1257_batch-128_lr-0001_test/**
